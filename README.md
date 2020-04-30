@@ -46,9 +46,10 @@ Currently, the following data sets are shared in this repository,
 |jh_ts_covid19_confirmed_global.csv|COVID-19 global confirmed cases by day (restructured to long format)|John Hopkins CSSE|
 |jh_ts_covid19_recovered_global.csv|COVID-19 global recovered cases by day (restructured to long format)|John Hopkins CSSE|
 |ined_age_sex_covid19_deaths.csv|COVID-19 deaths by age group and gender for selected European countries (restructured to long format) |INED|
+|cghr_covid19.sql|All above data sets (except intervals.csv) in a single SQL dump file|CGHR|
 
 
-**Note**: The data above is updated twice a week.
+**Note**: The data above are updated twice a week.
 
 
 ### How to use the data with R
