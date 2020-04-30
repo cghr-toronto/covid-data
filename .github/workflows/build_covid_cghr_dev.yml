@@ -1,11 +1,11 @@
-name: build_covid.cghr.dev
+name: build_covid_cghr_dev
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 jobs:
-  build_covid.cghr.dev:
+  build_covid_cghr_dev:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone covid.cghr.dev
