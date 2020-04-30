@@ -8,11 +8,16 @@ jobs:
   build_covid_cghr_dev:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout covid-data
+      uses: actions/checkout@v2
+      with:
+        path: main
+    - name: Checkout covid.cghr.dev
+      uses: actions/checkout@v2
       with:
         repository: cghr-toronto/covid.cghr.dev
         token: 7eeb2f7baab25f792932925305710d5097efe6cc
-        path: covid.cghr.dev
+        path: website
     - name: Pull covid-data submodule
       run: |
         git submodule update --init --recursive
