@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: cghr-toronto/covid.cghr.dev
-        pat: 7eeb2f7baab25f792932925305710d5097efe6cc 
+        token: 7eeb2f7baab25f792932925305710d5097efe6cc 
     - name: Pull covid-data submodule
       run: |
         cd covid.cghr.dev
