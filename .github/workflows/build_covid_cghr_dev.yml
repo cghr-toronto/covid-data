@@ -8,12 +8,12 @@ jobs:
   build_covid_cghr_dev:
     runs-on: ubuntu-18.04
     steps:
-    - name: Clone covid.cghr.dev
-      run: |
-        git clone https://github.com/cghr-toronto/covid.cghr.dev
-        cd covid.cghr.dev
+    - uses: actions/checkout@v2
+      with:
+        repository: 'cghr-toronto/covid.cghr.dev'
     - name: Pull covid-data submodule
       run: |
+        cd covid.cghr.dev
         git submodule update --init --recursive
         git submodule update --recursive --remote
     - name: Install snap
