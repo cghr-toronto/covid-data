@@ -1,0 +1,8 @@
+"name","type","description"
+"country_region","character","Country or region"
+"date1","double","Date in format YYYY-MM-DD"
+"lat","double","latitude in decimal degrees"
+"lon","double","longitude in decimal degrees"
+"province_state","character","Province or State"
+"serial_id","integer","Serial number, primary key"
+"value1","integer","Number of events"
