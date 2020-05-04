@@ -14,7 +14,7 @@ There several sources of COVID-19 data on the web. Here we list some sources we 
 <br>
 
 <b>Data sources on the web:</b><br>
-* [John Hopinks CSSE](https://github.com/CSSEGISandData/COVID-19 )
+* [John Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19 )
 * [Coronavirus App](https://coronavirus.app/map )
 * [INED](https://dc-covid.site.ined.fr/en/data/ )
 * [European Centre for Disease Prevention and Control](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide)
@@ -30,16 +30,15 @@ In our [COVID-19 forecasting paper](https://medrxiv.org/cgi/content/short/2020.0
 
 ## How to use this repository
 
-The data found in this repository can be downloaded by clicking on the file name above and then right click on the "Raw" menu button and choose "Save Link As". Alternatively, you can clone this repository in your computer by using [Git](https://help.github.com/en/github/getting-started-with-github/quickstart).
+The data found in this repository can be downloaded by clicking on the file name above and then right clicking on the "Raw" menu button and choosing "Save Link As". Alternatively, you can clone this repository in your computer by using [Git](https://help.github.com/en/github/getting-started-with-github/quickstart).
 
-Additionally, CGHR and non-CGHR bonafied reseachers, can access the data above and other data sets through our COVID-19 database (db).  Our db was created using [PostgreSQL](https://www.postgresql.org/), an open-source db software.  You can connect to it using most stats programs (R, Stata, Excel, etc.) Please contact us to request a login.
-  
+Additionally, CGHR and non-CGHR researchers can access the data above and other data sets through our COVID-19 database (db).  Our db was created using [PostgreSQL](https://www.postgresql.org/), an open-source db software.  You can connect to it using most statistics programs (R, Stata, Excel, etc.).
 
-## COVID-19 data in this repository
-
-See [dictionary.csv](dictionary.csv) for current data sets shared in this repository.
+Please contact us to request a login.
 
 **Note**: The data are updated twice a week.
+
+* See [dictionary.csv](dictionary.csv) for an overview of current data sets shared in this repository
 
 ### How to use the data with R
 R is an open-source statistical and computational program. You can download it here [R-project](https://www.r-project.org/).
@@ -76,14 +75,8 @@ R is an open-source statistical and computational program. You can download it h
 		# disconnect from db
 		dbDisconnect(con)
 
-
-### Data dictionary
-
-A basic data dictionary for all our public data sets can be found in the file **data_dictionary.csv** above. 
-
-
 ## Terms of use
 
-The content presented here is free for the public to use. 
-<br>
-<b>Contact us: cghr@smh.ca, [CGHR.org](http://www.cghr.org/)
+The content presented here is free for the public to use.
+
+**Contact**: cghr@smh.ca, [CGHR.org](http://www.cghr.org/)
