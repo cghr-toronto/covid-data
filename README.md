@@ -38,7 +38,7 @@ Please contact us to request a login or a SQL dump file.
 
 **Note**: The data are updated twice a week.
 
-* See [dictionary.csv](dictionary.csv) for an overview of current data sets shared in this repository
+* See [datasets.csv](datasets.csv) for an overview of current data sets shared in this repository
 
 ### How to use the data with R
 R is an open-source statistical and computational program. You can download it here [R-project](https://www.r-project.org/).
