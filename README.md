@@ -34,11 +34,11 @@ The data found in this repository can be downloaded by clicking on the file name
 
 Additionally, CGHR and non-CGHR researchers can access the data above and other data sets through our COVID-19 database (db).  Our db was created using [PostgreSQL](https://www.postgresql.org/), an open-source db software.  You can connect to it using most statistics programs (R, Stata, Excel, etc.).
 
-Please contact us to request a login.
+Please contact us to request a login or a SQL dump file.
 
 **Note**: The data are updated twice a week.
 
-* See [dictionary.csv](dictionary.csv) for an overview of current data sets shared in this repository
+* See [datasets.csv](datasets.csv) for an overview of current data sets shared in this repository
 
 ### How to use the data with R
 R is an open-source statistical and computational program. You can download it here [R-project](https://www.r-project.org/).
