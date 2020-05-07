@@ -1,5 +1,5 @@
 data,description,source,url
-"intervals.csv","COVID-19 forecasting models output data","CGHR",""
+"covid19_model_predictions.csv","COVID-19 forecasting models output data","CGHR","https://github.com/cghr-toronto/covid-data/tree/master/data/covid19_model_predictions"
 "jh_ts_covid19_deaths_global.csv","COVID-19 global deaths by day (long format)","John Hopkins CSSE","https://github.com/cghr-toronto/covid-data/tree/master/data/jh_ts_covid19_deaths_global"
 "jh_ts_covid19_confirmed_global.csv","COVID-19 global confirmed cases by day (restructured to long format)","John Hopkins CSSE","https://github.com/cghr-toronto/covid-data/tree/master/data/jh_ts_covid19_confirmed_global"
 "jh_ts_covid19_recovered_global.csv","COVID-19 global recovered cases by day (restructured to long format)","John Hopkins CSSE","https://github.com/cghr-toronto/covid-data/tree/master/data/jh_ts_covid19_recovered_global"
