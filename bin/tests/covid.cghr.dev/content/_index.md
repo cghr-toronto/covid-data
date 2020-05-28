@@ -1,13 +1,15 @@
 ---
-title: "The Centre for Global Health Research is actively conducting research on COVID-19"
+title: "COVID-19"
 ---
 
-{{< cardlist title="Our Work" >}}
+{{< datasets 
+    id="datasets" 
+    path="static/data/covid-data/datasets.csv" 
+    datafolder="static/data" 
+    reldatafolder="covid-data/data"
+    githubdatafolder="https://github.com/cghr-toronto/covid-data/tree/master/data" 
+    githubhistoryfolder="https://github.com/cghr-toronto/covid-data/commits/master/data"
+    paging="false"
+    info="_TOTAL_ Datasets" 
+>}}
 
-{{< card 
-    title="Data Collection" 
-    text="Curated Datasets for COVID Research" 
-    url="./data/index.html" 
-    img="img/data_card.jpg" />}}
-
-{{< /cardlist >}}
