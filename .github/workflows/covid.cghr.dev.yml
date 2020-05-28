@@ -1,0 +1,21 @@
+name: covid.cghr.dev
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install snap
+      run: | 
+        sudo apt update
+        sudo apt install snapd
+    - name: Install hugo
+      run: |
+        sudo snap install hugo
+    - name: Renders datasets shortcode on covid.cghr.dev
+      run: |
+        bash bin/test_covid.cghr.dev.sh
