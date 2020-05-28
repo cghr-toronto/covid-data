@@ -1,0 +1,276 @@
+/* --- navbar --- */
+/* Navigation bar */
+
+/* Custom navbar items */
+
+#logo {
+    width: 60px;
+    padding-left: 12px;
+}
+
+#title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    float: none;
+}
+
+/* Bootstrap navbar */
+
+.navbar {
+    background: var(--primary-background-color);
+    padding: 12px !important;
+}
+
+.navbar-brand, .navbar-brand:visited {
+    font-style: normal;
+    color: var(--text-color);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Remove navbar link colors */
+a.navbar-brand:hover, a.nav-link:hover {
+    color: var(--text-color);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Set links to be same color */
+.nav-link, .nav-link:visited {
+    font-style: normal;
+    color: var(--text-color);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Center menu items */
+#navbar-content {
+    text-align: center !important;
+}
+
+/* --- /navbar --- */
+
+
+/* --- bootstrap --- */
+
+/* Bootstrap cards */
+
+.card {
+    border-width: 0.5px;
+    border-radius: .3rem;
+    background: var(--primary-background-color);
+    margin-bottom: 22px;
+    height: 24rem;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+    border-radius: 0;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    height: 12rem;
+    object-fit: cover;
+    min-width: 18rem;
+}
+
+#our-work-cards {
+    padding-bottom: 35px;
+}
+
+/* --- /bootstrap --- */
+
+/* --- datatable --- */
+
+.datatable {
+    width: 100%;
+    box-shadow: none;
+    padding: 2px;
+}
+
+.dataTables_wrapper {
+    margin-top: 35px;
+}
+
+.dataTables_filter {
+    margin-bottom: 15px;
+}
+
+.datatable-button {
+    font-size:9pt;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.page-link {
+    background-color: transparent;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+}
+
+.page-link:focus {
+    box-shadow: none;
+    border:none;
+}
+
+.page-link:hover, .paginate_button:hover {
+    color: var(--url-color) !important;
+    background: transparent;
+}
+
+.page-item.active .page-link {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    border: none;
+}
+
+.page-item.active .page-link:hover {
+    color: var(--secondary-text-color) !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before  {
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 10px;
+    font-weight: 800;
+    box-shadow: none;
+}
+
+.dataTables_info {
+    padding: 0!important;
+}
+
+.form-control:focus {
+    color: #4d4d4d;
+    background-color: transparent;
+    border-color: var(--url-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.datatable tr, th, td {
+    border: none!important;
+}
+
+/* --- /datatable --- */
+
+
+/* --- site --- */
+/* Site settings */
+
+/* Headline */
+
+#headline {
+    color: var(--secondary-text-color);
+    padding-top: 15%;
+    padding-bottom: 25%;
+    font-size: 22pt;
+    background: linear-gradient(
+        rgba(30, 30, 30, 0.6),
+        rgba(125, 25, 25, 0.6)
+      ), url('../img/headline.jpg');
+    background-size: cover;
+}
+
+/* Contact */
+
+#contact {
+    background: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    padding-bottom: 90px;
+    padding-top: 15px;
+}
+
+/* Content */
+#content {
+    margin-bottom: 65px;
+}
+
+/* Links */
+
+a {
+    color: var(--url-color);
+    font-weight: 500;
+}
+
+a:hover, a:visited {
+    color: var(--url-color);
+    opacity: 0.5;
+}
+
+/* Remove outline and shadows around links and buttons */
+
+button:focus, a:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Background and text color */
+
+body {
+    padding-top: 70px;
+    color: var(--text-color);
+    background: #fcfcfcea;
+}
+
+p {
+    color: var(--text-color);
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.65rem;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 20pt !important;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 18pt;
+}
+
+/* Hide scrollbars */
+
+body::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
+}
+
+body { /* IE and Edge */
+    -ms-overflow-style: none;
+}
+
+/* Page Header */
+
+.page-header {
+    background: linear-gradient(
+        rgba(30, 30, 30, 0.5),
+        rgba(125, 25, 25, 0.6)
+      ), url('../img/page_header.jpg');
+    background-size: cover;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Footer */
+
+#footer {
+    font-size: 10pt;
+    background-color: var(--primary-background-color);
+    padding-bottom: 10px;
+}
+
+/* --- /site --- */

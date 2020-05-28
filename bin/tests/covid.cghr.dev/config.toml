@@ -1,0 +1,12 @@
+baseURL = "localhost"
+theme = "hugo-cghr-covid"
+publishDir = "public_html"
+
+[params]
+title = "COVID-19"
+metadataTitleBefore = "CGHR | "
+logo = "img/logo.png"
+logoURL = "http://www.cghr.org/"
+
+[markup.goldmark.renderer]
+unsafe = true

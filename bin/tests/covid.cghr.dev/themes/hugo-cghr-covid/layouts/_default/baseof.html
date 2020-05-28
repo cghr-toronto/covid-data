@@ -1,0 +1,29 @@
+{{ .Scratch.Set "defaultSections" (slice "Our Work") }}
+{{ .Scratch.Add "defaultSections" (slice "Contact") }}
+{{ .Scratch.Set "paramsSections" (.Params.sections | default .Site.Params.sections | default (.Scratch.Get "defaultSections")) }}
+{{ .Scratch.Set "paramsLogo" (.Site.Params.logo | default "img/logo.png") }}
+{{ .Scratch.Set "paramsLogoURL" (.Site.Params.logoURL | default "http://www.cghr.org/") }}
+{{ .Scratch.Set "paramsPrimaryColor" (.Site.Params.primaryColor | default "#da0b06") }}
+{{ .Scratch.Set "paramsPrimaryBackgroundColor" (.Site.Params.primaryBackgroundColor | default "#fcfcfc") }}
+{{ .Scratch.Set "paramsSecondaryBackgroundColor" (.Site.Params.secondaryBackgroundColor | default "#303030") }}
+{{ .Scratch.Set "paramsTextColor" (.Site.Params.textColor | default "#303030") }}
+{{ .Scratch.Set "paramsSecondaryTextColor" (.Site.Params.secondaryTextColor | default "#fcfcfc") }}
+{{ .Scratch.Set "paramsURLColor" (.Site.Params.urlColor | (.Scratch.Get "paramsPrimaryColor")) }}
+{{ .Scratch.Set "paramsURLVisitedColor" (.Site.Params.urlVisitedColor | (.Scratch.Get "paramsPrimaryColor")) }}
+{{ .Scratch.Set "paramsCSS" (.Params.css | default .Site.Params.css) }}
+{{ .Scratch.Set "paramsJS" (.Params.js | default .Site.Params.js) }}
+{{ .Scratch.Set "paramsFooter" (.Site.Params.footer | default "© Copyright 2020 Centre for Global Health Research") }}
+{{ .Scratch.Set "paramsTitle" (.Site.Params.title | default .Site.Params.title)}}
+{{ .Scratch.Set "paramsMetadataTitle" (.Params.metadata.title | default  (.Scratch.Get "paramsTitle"))}}
+{{ .Scratch.Set "paramsMetadataTitleBefore" (.Params.metadata.titleBefore | default  .Site.Params.metadataTitleBefore)}}
+{{ .Scratch.Set "paramsMetadataTitleAfter" (.Params.metadata.titleAfter | default  .Site.Params.metadataTitleAfter)}}
+{{ .Scratch.Set "baseURL" "."}}
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode | default "en-ca"}}'>
+    {{- partial "head.html" . -}}
+    <body class="container-fluid text-center">
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

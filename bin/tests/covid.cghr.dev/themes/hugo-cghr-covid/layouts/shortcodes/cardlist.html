@@ -1,0 +1,6 @@
+<div id='{{ replace (lower (.Get "title")) " " "-" }}-div'>
+<h2 id='{{ replace (lower (.Get "title")) " " "-" }}'>{{.Get "title"}}</h2>
+    <div id='{{ replace (lower (.Get "title")) " " "-" }}-cards' class="row">
+        {{.Inner}}
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{{ $baseURL := .Scratch.Get "baseURL" }}
+<!--Navbar-->
+<nav class="navbar fixed-top mb-4 shadow-sm">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href='{{ .Scratch.Get "paramsLogoURL" }}'><img id="logo" src='{{ $baseURL }}/{{ .Scratch.Get "paramsLogo" }}' alt="Logo"></a>
+    <a class="navbar-brand" id="title" href='{{ $baseURL }}/index.html'>{{ .Scratch.Get "paramsTitle" }}
+        
+    </a>
+
+    <!-- Collapse button -->
+    <button id="menu" class="navbar-toggler button" type="button" data-toggle="collapse"
+        data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="navbar-collapse collapse" id="navbar-content">
+
+        <!-- Sections -->
+        <ul class="navbar-nav mr-auto">{{ range .Scratch.Get "paramsSections" }}
+            <li class="nav-item"><a class="nav-link fade-in" href='{{ $baseURL }}/#{{ replace (lower .) " " "-" }}'>{{.}}</a></li>
+        {{ end }}</ul> <!-- Links -->
+
+    </div> <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

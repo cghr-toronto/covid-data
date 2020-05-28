@@ -1,0 +1,25 @@
+<div id='{{ replace (lower (.Get "title")) " " "-" }}' class="row">
+    <div class="col">
+        <h2>{{.Get "title"}}</h2>
+        {{ .Inner | safeHTML }}
+        {{ if (isset .Params "street") }}<br>{{.Get "street"}}{{ end }}
+        {{ if (isset .Params "city") }}
+            <br>{{.Get "city"}}{{ if (isset .Params "province") }}, {{.Get "province"}}{{end}}
+        {{ end }}
+        {{ if (isset .Params "postalCode") }}
+            <br>{{.Get "postalCode"}}
+        {{ end }}
+        {{ if (isset .Params "country") }}
+            <br>{{.Get "country"}}
+        {{ end }}
+        {{ if (isset .Params "phone") }}
+            <br>Tel: {{.Get "phone"}}
+        {{ end }}
+        {{ if (isset .Params "fax") }}
+            <br>Fax: {{.Get "fax"}}
+        {{ end }}
+        {{ if (isset .Params "email") }}
+            <br>Email: {{.Get "email"}}
+        {{ end }}
+    </div>
+</div>

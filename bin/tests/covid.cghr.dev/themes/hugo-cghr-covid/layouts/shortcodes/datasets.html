@@ -1,0 +1,56 @@
+{{ $id := (.Get "id")}}
+{{ $paging := (.Get "paging" | default "true" )}}
+{{ $info := (.Get "info" | default "Showing _START_ to _END_ of _TOTAL_ entries") }}
+{{ $url := (.Get "path") }}
+{{ $sep := "," }}
+{{ $csv := (getCSV $sep $url) }}
+{{ $th := (index $csv 0) }}
+{{ $filetypes := (slice "csv" "xls" "xlsx" "json" "shp" "geojson" ) }}
+{{ $datafolder := (.Get "datafolder" | default "static/data") }}
+{{ $reldatafolder := (.Get "reldatafolder") }}
+{{ $githubdatafolder := ( .Get "githubdatafolder" ) }}
+{{ $githubhistoryfolder := ( .Get "githubhistoryfolder" ) }}
+<table id="{{ $id }}" class="datatable table hover cell-border-left cell-border-right responsive">
+<thead class="rounded bg-dark text-light">
+<tr class="bg-dark">
+    <th>{{ humanize (index $th 0) }}</th>
+    <th>{{ humanize (index $th 1) }}</th>
+    <th>{{ humanize (index $th 2) }}</th>
+    <th>Links</th>
+</tr>
+</thead>
+<tbody>
+    {{ range $i, $tr := (after 1 $csv) }}{{ $name := (index $tr 0) }}
+    <tr class="border-bottom">
+        <td>{{ (index $tr 0) }}</td>
+        <td>{{ (index $tr 1) }}</td>
+        <td>{{ (index $tr 2) }}</td>
+        <td>
+            <a href="{{ $githubdatafolder }}/{{ $name }}"><button class="btn btn-dark datatable-button"><i class="fa fa-info-circle"></i> Details</button></a>
+            {{ if (fileExists (print $datafolder "/" $reldatafolder "/" $name "/" $name "_dictionary.csv")) }}
+                <a href="{{ $githubdatafolder }}/{{ $name }}/{{ $name }}_dictionary.csv"><button class="btn btn-dark datatable-button"><i class="fa fa-book"></i> Dictionary</button></a>
+            {{ end }}
+            <a href="{{ $githubhistoryfolder }}/{{ $name }}"><button class="btn btn-dark datatable-button"><i class="fa fa-history"></i> History</button></a>
+            {{ range $filetypes }}
+                {{ if (fileExists (print $datafolder "/" $reldatafolder "/" $name "/" $name "." .)) }}
+                    <a href="{{ $reldatafolder }}/{{ $name }}/{{ $name }}.{{ . }}" download><button class="btn btn-dark datatable-button"><i class="fa fa-download"></i> {{ upper . }}</button></a>
+                {{ end }}
+            {{ end }}
+        </td>
+    </tr>
+    {{ end }}
+</tbody>
+</table>
+<script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+        initDataTable('#{{ $id }}', {
+            paging: {{ $paging }} == "true",
+            language: {
+                info: '{{ $info }}',
+                search: '<i class="fa fa-search" aria-hidden="true"></i>',
+                searchPlaceholder: 'Search...'
+            },
+            dom: 'fti'
+        });
+    });
+</script>

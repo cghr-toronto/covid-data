@@ -1,0 +1,10 @@
+<div class="col">
+    <div class="card">
+        <img class="card-img" src='{{.Get "img"}}'>
+        <div class="card-body">
+            <h5 class="card-title">{{.Get "title"}}</h5>
+            <p class="card-text">{{.Get "text" | default .Inner}}</p>
+            <a href='{{.Get "url"}}' class="stretched-link"></a>
+        </div>
+    </div>
+</div>

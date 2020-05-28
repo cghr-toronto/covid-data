@@ -1,0 +1,3 @@
+<div id='{{ (.Get "id") | default (replace (lower (.Get "text")) " " "-") }}' class="row text-center fade-in"><div class="col">
+    {{ (.Get "text" | default .Inner) | default .Page.Params.title }}
+</div></div>

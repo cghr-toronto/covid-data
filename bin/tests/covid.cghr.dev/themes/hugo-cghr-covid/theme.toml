@@ -1,0 +1,12 @@
+name = "Hugo Cghr Coronavirus Theme"
+license = ""
+licenselink = "https://github.com/cghr-toronto/hugo-cghr-covid/blob/master/LICENSE"
+description = "Theme for the Coronavirus website at the Centre for Global Health Research, Toronto, ON"
+homepage = "https://github.com/cghr-toronto/hugo-cghr-covid"
+tags = ["cghr", "global", "health", "research", "centre", "dev", "development"]
+features = []
+min_version = "0.41.0"
+
+[author]
+name = "Centre for Global Health Research"
+homepage = "http://cghr.org/"

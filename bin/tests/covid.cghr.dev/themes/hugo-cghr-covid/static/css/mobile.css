@@ -1,0 +1,31 @@
+@media only screen and (max-width: 992px) {
+    #title {
+        font-size: 4vw;
+        margin: 0;
+    }
+    #logo {
+        width: 50px;
+        padding-left: 10px;
+    }
+    .mb-4 {
+        padding: 0px;
+    }
+    .nav-link {
+        font-size: 3.75vw;
+    }
+    .card {
+        transform: scale(0.8, 0.8);
+        margin-bottom: -45px !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.25rem !important;
+    }
+    #headline {
+        font-size: 6vw;
+        padding-top: 40%;
+        padding-bottom: 45%;
+    }
+    #contact {
+        font-size: 3vw;
+    }
+}

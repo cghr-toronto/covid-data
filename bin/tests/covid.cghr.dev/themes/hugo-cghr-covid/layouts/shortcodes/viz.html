@@ -1,0 +1,7 @@
+<div id='{{.Get "id"}}'></div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        {{ if isset .Params "func"}} {{ .Get "func" | safeJS }}(id = '#{{ .Get "id" }}'); {{ end }}
+        {{ .Inner | safeJS }}
+    });
+</script>
