@@ -1,5 +1,5 @@
 ## Dictionary Link
-https://github.com/cghr-toronto/covid-data/blob/master/data/covid19_model_predictions/covid19_model_predictions_dictionary.csv
+https://github.com/cghr-toronto/covid-data/blob/master/data/data/covid19_model_predictions_per_million/covid19_model_predictions_per_million_dictionary.csv
 
 ## Description
 Dataset containing observed data and predictions about COVID19 mortality for countries around the world. Includes data 
