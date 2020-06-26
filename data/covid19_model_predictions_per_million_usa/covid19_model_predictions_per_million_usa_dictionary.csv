@@ -10,7 +10,7 @@ lo_0_8_intensity,factor,intensity associated with the lower 80% simultaneous cre
 hi_0_8_intensity,factor,intensity associated with the higher 80% simultaneous credible interval for daily cases
 lo_0_95_intensity,factor,intensity associated with the lower 95% simultaneous credible interval for daily cases
 hi_0_95_intensity,factor,intensity associated with the higher 95% simultaneous credible interval for daily cases 
-1pct_cumulative,factor,1% threshold on total deaths observed starting 1/1/2020, multiplied by mMult
+1pct_cumulative,factor,1% threshold on total deaths observed starting 1/1/2020 multiplied by mMult
 2_5pct_cumulative,factor,2.5% threshold on total deaths observed starting 1/1/2020 multiplied by mMult
 10pct_cumulative,factor,10% threshold on total deaths observed starting 1/1/2020 multiplied by mMult
 25pct_cumulative,factor,25% threshold on total deaths observed starting 1/1/2020 multiplied by mMult

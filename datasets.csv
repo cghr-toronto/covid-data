@@ -1,5 +1,7 @@
 data,description,source
 "covid19_model_predictions","COVID-19 forecasting models output data","CGHR"
+"covid19_model_predictions_per_million","COVID-19 forecasting models output data per million","CGHR"
+"covid19_model_predictions_per_million_usa","COVID-19 forecasting models output data per million for USA","CGHR"
 "jh_ts_covid19_deaths_global","COVID-19 global deaths by day (long format)","John Hopkins CSSE"
 "jh_ts_covid19_confirmed_global","COVID-19 global confirmed cases by day (restructured to long format)","John Hopkins CSSE"
 "jh_ts_covid19_recovered_global","COVID-19 global recovered cases by day (restructured to long format)","John Hopkins CSSE"
