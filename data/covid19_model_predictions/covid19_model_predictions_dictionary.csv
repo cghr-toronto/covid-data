@@ -1,34 +1,34 @@
-﻿Name,Type,Description
-reporting_unit,factor,country or state (if US)
-time ,factor,date (starting 1/1/2020-9/30/2020)
-central_cases,factor,mean number of daily cases
-central_intensity,factor,mean number of intensity (intensity: parameter of negative binomial model distribution)
-lo_0_25_cases,numeric,the lower 25% simultaneous credible interval for daily cases
-hi_0_25_cases,numeric,the higher 25% simultaneous credible interval for daily cases
-lo_0_5_cases,numeric,the lower 50% simultaneous credible interval for daily cases
-hi_0_5_cases,numeric,the higher 50% simultaneous credible interval for daily cases
-lo_0_8_cases,numeric,the lower 80% simultaneous credible interval for daily cases
-hi_0_8_cases,numeric,the higher 80% simultaneous credible interval for daily cases
-lo_0_95_cases,numeric,the lower 95% simultaneous credible interval for daily cases
-hi_0_95_cases,numeric,the higher 95% simultaneous credible interval for daily cases
-lo_0_25_intensity,factor,intensity associated with the lower 25% simultaneous credible interval for daily cases
-hi_0_25_intensity,factor,intensity associated with the higher 25% simultaneous credible interval for daily cases
-lo_0_5_intensity,factor,intensity associated with the lower 50% simultaneous credible interval for daily cases
-hi_0_5_intensity,factor,intensity associated with the higher 50% simultaneous credible interval for daily cases
-lo_0_8_intensity,factor,intensity associated with the lower 80% simultaneous credible interval for daily cases 
-hi_0_8_intensity,factor,intensity associated with the higher 80% simultaneous credible interval for daily cases
-lo_0_95_intensity,factor,intensity associated with the lower 95% simultaneous credible interval for daily cases
-hi_0_95_intensity,factor,intensity associated with the higher 95% simultaneous credible interval for daily cases 
-1pct_cumulative,factor,1% threshold on total deaths observed starting 1/1/2020
-2_5pct_cumulative,factor,2.5% threshold on total deaths observed starting 1/1/2020
-10pct_cumulative,factor,10% threshold on total deaths observed starting 1/1/2020
-25pct_cumulative,factor,25% threshold on total deaths observed starting 1/1/2020
-50pct_cumulative,factor,50% threshold on total deaths observed starting 1/1/2020
-75pct_cumulative,factor,75% threshold on total deaths observed starting 1/1/2020
-90pct_cumulative,factor,90% threshold on total deaths observed starting 1/1/2020
-97_5pct_cumulative,factor,97.5% threshold on total deaths observed starting 1/1/2020
-99pct_cumulative,factor,99% threshold on total deaths observed starting 1/1/2020
-dead,numeric,reported deaths
-country,factor,country
-Expected,factor,
-mMult,factor,
+﻿"Name","Type","Description"
+"reporting_unit","factor","country or state (if US)"
+"time ","factor","date (starting 1/1/2020-9/30/2020)"
+"central_cases","factor","mean number of daily cases"
+"central_intensity","factor","mean number of intensity (intensity: parameter of negative binomial model distribution)"
+"lo_0_25_cases","numeric","the lower 25% simultaneous credible interval for daily cases"
+"hi_0_25_cases","numeric","the higher 25% simultaneous credible interval for daily cases"
+"lo_0_5_cases","numeric","the lower 50% simultaneous credible interval for daily cases"
+"hi_0_5_cases","numeric","the higher 50% simultaneous credible interval for daily cases"
+"lo_0_8_cases","numeric","the lower 80% simultaneous credible interval for daily cases"
+"hi_0_8_cases","numeric","the higher 80% simultaneous credible interval for daily cases"
+"lo_0_95_cases","numeric","the lower 95% simultaneous credible interval for daily cases"
+"hi_0_95_cases","numeric","the higher 95% simultaneous credible interval for daily cases"
+"lo_0_25_intensity","factor","intensity associated with the lower 25% simultaneous credible interval for daily cases"
+"hi_0_25_intensity","factor","intensity associated with the higher 25% simultaneous credible interval for daily cases"
+"lo_0_5_intensity","factor","intensity associated with the lower 50% simultaneous credible interval for daily cases"
+"hi_0_5_intensity","factor","intensity associated with the higher 50% simultaneous credible interval for daily cases"
+"lo_0_8_intensity","factor","intensity associated with the lower 80% simultaneous credible interval for daily cases "
+"hi_0_8_intensity","factor","intensity associated with the higher 80% simultaneous credible interval for daily cases"
+"lo_0_95_intensity","factor","intensity associated with the lower 95% simultaneous credible interval for daily cases"
+"hi_0_95_intensity","factor","intensity associated with the higher 95% simultaneous credible interval for daily cases""
+"1pct_cumulative","factor","1% threshold on total deaths observed starting 1/1/2020"
+"2_5pct_cumulative","factor","2.5% threshold on total deaths observed starting 1/1/2020"
+"10pct_cumulative","factor","10% threshold on total deaths observed starting 1/1/2020"
+"25pct_cumulative","factor","25% threshold on total deaths observed starting 1/1/2020"
+"50pct_cumulative","factor","50% threshold on total deaths observed starting 1/1/2020"
+"75pct_cumulative","factor","75% threshold on total deaths observed starting 1/1/2020"
+"90pct_cumulative","factor","90% threshold on total deaths observed starting 1/1/2020"
+"97_5pct_cumulative","factor","97.5% threshold on total deaths observed starting 1/1/2020"
+"99pct_cumulative","factor","99% threshold on total deaths observed starting 1/1/2020"
+"dead","numeric","reported deaths"
+"country","factor","country"
+"Expected","factor",
+"mMult","factor",
